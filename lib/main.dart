@@ -376,7 +376,7 @@ void main() => runApp(MaterialApp(
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
-                                   Expanded(
+                                  Expanded(
                                     child: Text(
                                       'O sangue também se acumula nos membros inferiores, causando inchaço dos tornozelos e pernas.',
                                       style: TextStyle(fontSize: 20),
@@ -385,13 +385,189 @@ void main() => runApp(MaterialApp(
                                   ),
                                   Image(
                                       image: ResizeImage(
-                                        AssetImage('images/pes.jpg'),
-                                        width: 200,
-                                        height: 180,
-                                      )),
+                                    AssetImage('images/pes.jpg'),
+                                    width: 200,
+                                    height: 180,
+                                  )),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Image(
+                                      image: ResizeImage(
+                                    AssetImage('images/figado.jpg'),
+                                    width: 200,
+                                    height: 300,
+                                  )),
+                                  Expanded(
+                                    child: Text(
+                                      'Pode causar acumulação também no fígado e órgãos digestivos causando a perda de apetite.',
+                                      style: TextStyle(fontSize: 20),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ),
                                 ],
                               ),
                             )
+                          ],
+                        ),
+                      ),
+                      Card(
+                        elevation: 0,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Text(
+                              '• Prática de atividades físicas',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Image(
+                                image: ResizeImage(
+                              AssetImage('images/exercicio1.jpg'),
+                              width: 500,
+                              height: 300,
+                            )),
+                            Text(
+                              'Prática de exercícios físicos melhoram o condicionamento físico e a capacidade para realizar as atividades do dia a dia:',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Text(
+                              '- Melhora do controle da doença;',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Text(
+                              '- Redução da pressão arterial;',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Text(
+                              '- Melhora da função respiratória, pois fortalece a musculatura respiratória (aumento do oxigênio);',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Text(
+                              '- Melhora a capacidade funcional e o bem estar;',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Text(
+                              '- Melhora a força, função e resistência dos músculos do coração;',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Image(
+                                alignment: Alignment.center,
+                                image: ResizeImage(
+                                  AssetImage('images/exercicio2.jpg'),
+                                  width: 500,
+                                  height: 500,
+                                )),
+                            Text(
+                              'Pergunte ao médico quais os exercícios que você deve realizar e planeje suas atividades',
+                              style: TextStyle(fontSize: 20, color: Colors.red),
+                              textAlign: TextAlign.left,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Card(
+                          elevation: 0,
+                          child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.min,
+                              children: <Widget>[
+                                Text(
+                                  '• Controle da pressão arterial',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20),
+                                  textAlign: TextAlign.left,
+                                ),
+                                Image(
+                                    alignment: Alignment.center,
+                                    image: ResizeImage(
+                                      AssetImage('images/controlepressao.jpg'),
+                                      width: 500,
+                                      height: 500,
+                                    )),
+                                Text(
+                                  'A pressão arterial elevada sobrecarrega o músculo cardíaco e deixando-o cada vez mais fraco.\nO Aumento da Pressão arterial é a causa de descompensação e da Insuficiência.',
+                                  style: TextStyle(fontSize: 20),
+                                  textAlign: TextAlign.left,
+                                ),
+                                Text(
+                                  'REALIZE CONTROLE DE SUA PRESSÃO ARTERIAL DIARIAMENTE',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20),
+                                  textAlign: TextAlign.left,
+                                ),
+                                Text(
+                                  'FAÇA REGISTRO PARA LEVAR NA CONSULTA MÉDICA.',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 20),
+                                  textAlign: TextAlign.left,
+                                ),
+                                Image(
+                                    alignment: Alignment.center,
+                                    image: ResizeImage(
+                                      AssetImage('images/esfigmocoracao.jpg'),
+                                      width: 500,
+                                      height: 500,
+                                    )),
+                              ])),
+                      Card(
+                        elevation: 0,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Text(
+                              '• Interrupção do consumo de álcool e cigarro',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Image(
+                                alignment: Alignment.center,
+                                image: ResizeImage(
+                                  AssetImage('images/bebida.jpeg'),
+                                  width: 400,
+                                  height: 400,
+                                )),
+                            Text(
+                              'O álcool enfraquece o coração, levando a uma doença chamada miocardiopatia alcoólica. Que funciona assim: o coração tenta bombear o sangue, mas não consegue porque está enfraquecido e com isso causa um aumento em seu tamanho.',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Image(
+                                alignment: Alignment.center,
+                                image: ResizeImage(
+                                  AssetImage('images/cigarro.jpg'),
+                                  width: 400,
+                                  height: 400,
+                                )),
+                            Text(
+                              'O cigarro afeta o transporte do oxigénio para o nosso organismo, fazendo com que o coração trabalhe mais.\nFumar também contribui para o acúmulo de gorduras no sangue, causando o estreitamento dos vasos e aumentando a pressão com que esse sangue saia.',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Text(
+                              'O consumo de álcool e cigarro aumenta os sintomas da Insuficiência Cardíaca.',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
                           ],
                         ),
                       ),

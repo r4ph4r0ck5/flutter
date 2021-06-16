@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:untitled/content/strings.dart';
 
@@ -566,11 +567,185 @@ void main() => runApp(MaterialApp(
                               'O consumo de álcool e cigarro aumenta os sintomas da Insuficiência Cardíaca.',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 20),
-                              textAlign: TextAlign.left,
+                              textAlign: TextAlign.justify,
                             ),
                           ],
                         ),
                       ),
+                      Card(
+                        elevation: 0,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            Text(
+                              '• Diminuir o sal e a água',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Image(
+                                alignment: Alignment.center,
+                                image: ResizeImage(
+                                  AssetImage('images/sal.jpg'),
+                                  width: 400,
+                                  height: 400,
+                                )),
+                            Text(
+                              'O sal quando ingerido em grande quantidade, acumulam no interior dos vasos sanguineos e funcionam como esponjas. Aumenta a retenção de líquidos e aumenta a Pressão Arterial.',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Image(
+                                alignment: Alignment.center,
+                                image: ResizeImage(
+                                  AssetImage('images/agua.jpg'),
+                                  width: 300,
+                                  height: 300,
+                                )),
+                            Text(
+                              'O Controle de liquido e controle de sal  diminui a retenção de liquido, além do controle do peso, da pressão arterial. Facilita o funcionamento do coração.',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.left,
+                            ),
+                            Text(
+                              'Esses ajustes devem ser reavaliado de acordo com o peso, pressão arterial e a até mesmo com a evolução da doença.',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold, fontSize: 20),
+                              textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Card(
+                          elevation: 0,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: <Widget>[
+                              Text(
+                                'Como colocar em prática a restrição hídrica?',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                                textAlign: TextAlign.left,
+                              ),
+                              Image(
+                                  alignment: Alignment.center,
+                                  image: ResizeImage(
+                                    AssetImage(
+                                        'images/exemplorestricaohidrica.jpg'),
+                                    width: 300,
+                                    height: 600,
+                                  )),
+                              Text(
+                                '• Primeiro você pode começar pegando uma garrafa de água na qual já esteja acostumado ou seja específica para o seu caso (de acordo com a orientação da equipe de Saúde que inclui avaliação do peso, pressão arterial e a até mesmo com a evolução da doença).',
+                                style: TextStyle(fontSize: 20),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Text(
+                                'O segundo passo é dividir essa garrafa em turnos, por exemplo: manhã, tarde e noite, ou em horários, assim você sabe o quanto pode beber em cada turno respeitando a restrição.',
+                                style: TextStyle(fontSize: 20),
+                                textAlign: TextAlign.justify,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Card(
+                          elevation: 0,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: <Widget>[
+                              Text(
+                                'Como colocar em prática a restrição de sódio?',
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold, fontSize: 20),
+                                textAlign: TextAlign.left,
+                              ),
+                              Image(
+                                  alignment: Alignment.center,
+                                  image: ResizeImage(
+                                    AssetImage('images/bacalhau.jpg'),
+                                    width: 300,
+                                    height: 300,
+                                  )),
+                              Text(
+                                '• Primeiro devemos nos atentar a quantidade de sódio que os alimentos possuem. Há alimentos com maiores índices de sódio em sua composição, tais como:',
+                                style: TextStyle(fontSize: 20),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Text(
+                                '* Alimentos industrializados e em conservas: caldo de carne; bacalhau; carne seca e defumados; sopas e temperos em pacote.',
+                                style: TextStyle(fontSize: 20),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Text(
+                                '* Condimentos em geral como: Ketchup; mostarda; molhos prontos (ex: shoyu); picles; azeitona, palmito.',
+                                style: TextStyle(fontSize: 20),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Image(
+                                  alignment: Alignment.center,
+                                  image: ResizeImage(
+                                    AssetImage('images/condimentos.jpg'),
+                                    width: 300,
+                                    height: 300,
+                                  )),
+                              Text(
+                                '* Outros alimentos, como: Amendoim; semente de abóbora, grão de bico.',
+                                style: TextStyle(fontSize: 20),
+                                textAlign: TextAlign.justify,
+                              ),
+                              Card(
+                                elevation: 10,
+                                child: Column(
+                                  children: [
+                                    Text(
+                                      'Curiosidade:',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 20,
+                                          color: Colors.red),
+                                      textAlign: TextAlign.center,
+                                    ),
+                                    Text(
+                                      'Pães e alimentos panificados: O fermento contém bicabornato de sódio.',
+                                      style: TextStyle(fontSize: 20),
+                                      textAlign: TextAlign.justify,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      Card(
+                        elevation: 0,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Image(
+                                alignment: Alignment.center,
+                                image: ResizeImage(
+                                  AssetImage('images/deitada.jpg'),
+                                  width: 400,
+                                  height: 400,
+                                )),
+                            Text(
+                              '• Outro cuidado importante que podemos colocar em prática é a utilização de travesseiros e manter a cabeça elevada, seja na cama ou no sofá.(Isso facilita a respiração e alivia a congestão pulmonar)',
+                              style: TextStyle(fontSize: 20),
+                              textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 ),
